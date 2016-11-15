@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/stylesheets/style.css">
+    <title>No AJAX</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-static-top navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">No AJAX    <span class="glyphicon glyphicon-remove"></span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="page-header text-center">
+            <h1 id='main-title' data-heading="It Changed Without AJAX">No AJAX Required to Change this Title</h1>
+        </div>
+        <div class="container-fluid">
+            <div id="main-container" class='container'>
+              <button class="btn btn-primary" id="btnheading">Change Title with data-heading</button>
+              <button class="btn btn-primary" id="btnurl">Change Title with url tag</button>
+              <button class="btn btn-primary" id="btnmeals">Change Title with Random Meals</button>
+
+              <input id='hiddenurl' type="hidden" url="http://www.google.com"/>
+              <input id='hiddenmeals' type="hidden" rel=""/>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./src/javascripts/jquery.min.js" charset="utf-8"></script>
+<script src="./src/javascripts/bootstrap.min.js" charset="utf-8"></script>
+<script src="./src/javascripts/javascript.js" charset="utf-8"></script>
+
+
+</html>
